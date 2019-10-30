@@ -1,0 +1,28 @@
+<div id="login">
+    <h3 class="text-center text-black pt-5"></h3>
+    <div class="container">
+        <div id="login-row" class="row justify-content-center align-items-center">
+            <div id="login-column" class="col-md-6">
+                <div id="login-box" class="col-md-12">
+                    <form id="login-form" class="form" action="" method="post">
+                        <h3 class="text-center text-info">Faça o login</h3>
+                        <div class="form-group">
+                            <label for="usuario" class="text-info">Nome de usuário:</label><br>
+                            <input type="text" name="usuario" id="usuario" class="form-control" [(ngModel)]="login.login">
+                        
+                        </div>
+                        <div class="form-group">
+                            <label for="senha" class="text-info">Senha:</label><br>
+                            <input type="password" name="senha" id="senha" class="form-control" [(ngModel)]="login.senha">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btn btn-info btn-md" value="Entrar" (click)="logar()">
+                        </div>
+                        <div id="register-link" class="text-right">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
